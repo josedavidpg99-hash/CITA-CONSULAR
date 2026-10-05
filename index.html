@@ -5,34 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asesoría Cita Consular — $5.99</title>
 <style>
-  :root{--verde:#006847;--blanco:#ffffff;--rojo:#CE1126;--txt:#1a1a1a;--mut:#6b7280;}
+  :root{--vino:#7a1a2b;--vino2:#5c1220;--dorado:#d4a017;--dorado2:#e8c874;--blanco:#ffffff;--suave:rgba(255,255,255,.72);}
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--blanco);color:var(--txt);line-height:1.5;}
-  .tricolor{display:flex;height:10px;}
-  .tricolor div{flex:1;}
-  .tricolor .v{background:var(--verde);}
-  .tricolor .b{background:var(--blanco);border-bottom:1px solid #e5e7eb;}
-  .tricolor .r{background:var(--rojo);}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--blanco);line-height:1.5;
+    background:linear-gradient(165deg,var(--vino) 0%,var(--vino2) 100%);min-height:100vh;}
+  .barra-dorada{height:6px;background:linear-gradient(90deg,var(--dorado2),var(--dorado),var(--dorado2));}
   .wrap{max-width:520px;margin:0 auto;padding:56px 22px 60px;text-align:center;}
-  .sello{display:inline-block;font-size:12px;letter-spacing:3px;font-weight:800;color:var(--verde);border:2px solid var(--verde);border-radius:999px;padding:7px 18px;margin-bottom:26px;}
+  .sello{display:inline-block;font-size:12px;letter-spacing:3px;font-weight:800;color:var(--dorado2);
+    border:2px solid var(--dorado);border-radius:999px;padding:7px 18px;margin-bottom:26px;}
   h1{font-size:34px;line-height:1.2;margin-bottom:14px;}
-  h1 .rojo{color:var(--rojo);}
-  .sub{font-size:19px;color:var(--txt);margin-bottom:8px;}
-  .precio{font-size:56px;font-weight:800;color:var(--verde);margin:18px 0 30px;letter-spacing:-1px;}
+  h1 .dorado{color:var(--dorado2);}
+  .sub{font-size:19px;color:var(--suave);margin-bottom:8px;}
+  .precio{font-size:60px;font-weight:800;color:var(--dorado2);margin:18px 0 30px;letter-spacing:-1px;
+    text-shadow:0 2px 18px rgba(212,160,23,.35);}
   .precio small{font-size:20px;font-weight:700;vertical-align:super;}
-  .paybtn{display:block;text-align:center;background:var(--verde);color:#fff;font-size:21px;font-weight:800;text-decoration:none;border-radius:18px;padding:20px;margin:0 0 14px;box-shadow:0 8px 22px rgba(0,104,71,.35);}
+  .paybtn{display:block;text-align:center;background:linear-gradient(135deg,var(--dorado2),var(--dorado));
+    color:#3d0d18;font-size:21px;font-weight:800;text-decoration:none;border-radius:18px;padding:20px;margin:0 0 14px;
+    box-shadow:0 8px 26px rgba(212,160,23,.4);}
   .paybtn:active{transform:scale(.98);}
-  .wa{display:block;text-align:center;background:#fff;color:var(--verde);border:2px solid var(--verde);font-weight:700;text-decoration:none;border-radius:18px;padding:15px;margin-top:6px;font-size:16px;}
-  footer{margin-top:44px;color:var(--mut);font-size:12px;}
+  .wa{display:block;text-align:center;background:transparent;color:var(--blanco);border:2px solid rgba(255,255,255,.55);
+    font-weight:700;text-decoration:none;border-radius:18px;padding:15px;margin-top:6px;font-size:16px;}
+  .wa:active{transform:scale(.98);}
+  footer{margin-top:44px;color:var(--suave);font-size:12px;}
 </style>
 </head>
 <body>
 
-<div class="tricolor"><div class="v"></div><div class="b"></div><div class="r"></div></div>
+<div class="barra-dorada"></div>
 
 <div class="wrap">
   <span class="sello">CONSULADO MEXICANO</span>
-  <h1>¿No puedes conseguir <span class="rojo">cita consular</span>?</h1>
+  <h1>¿No puedes conseguir <span class="dorado">cita consular</span>?</h1>
   <p class="sub">Nosotros te ayudamos por</p>
   <div class="precio"><small>$</small>5.99</div>
 
