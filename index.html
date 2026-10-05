@@ -3,76 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asesoría Cita Consular — $5</title>
+<title>Asesoría Cita Consular — $5.99</title>
 <style>
-  :root{--navy:#14263d;--navy2:#1e3a5f;--gold:#d4a017;--gold2:#b8860b;--bg:#f4f6f9;--txt:#1c2b3a;--mut:#5b6b7d;}
+  :root{--verde:#006847;--blanco:#ffffff;--rojo:#CE1126;--txt:#1a1a1a;--mut:#6b7280;}
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;}
-  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:52px 22px 44px;text-align:center;}
-  .eyebrow{display:inline-block;font-size:12px;letter-spacing:3px;font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:20px;padding:6px 16px;margin-bottom:18px;}
-  .hero h1{font-size:32px;line-height:1.2;margin-bottom:12px;}
-  .hero p{color:#c9d4e2;font-size:16px;max-width:520px;margin:0 auto;}
-  .price{display:inline-block;margin-top:20px;background:var(--gold);color:#14263d;font-weight:800;font-size:22px;border-radius:14px;padding:10px 28px;}
-  .wrap{max-width:560px;margin:0 auto;padding:26px 18px 60px;}
-  .card{background:#fff;border-radius:16px;padding:22px;margin-bottom:18px;box-shadow:0 2px 12px rgba(20,38,61,.07);}
-  .card h2{font-size:19px;margin-bottom:12px;color:var(--navy);}
-  .card ul{list-style:none;}
-  .card li{padding:9px 0 9px 34px;position:relative;border-bottom:1px solid #eef1f5;font-size:15px;}
-  .card li:last-child{border:none;}
-  .card li::before{content:"✓";position:absolute;left:6px;top:9px;color:var(--gold2);font-weight:800;}
-  .steps{counter-reset:s;}
-  .step{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #eef1f5;}
-  .step:last-child{border:none;}
-  .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;}
-  .step p{font-size:15px;} .step b{color:var(--navy);}
-  .paybtn{display:block;text-align:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;font-size:19px;font-weight:800;text-decoration:none;border-radius:16px;padding:18px;margin:6px 0 10px;box-shadow:0 6px 18px rgba(184,134,11,.35);}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--blanco);color:var(--txt);line-height:1.5;}
+  .tricolor{display:flex;height:10px;}
+  .tricolor div{flex:1;}
+  .tricolor .v{background:var(--verde);}
+  .tricolor .b{background:var(--blanco);border-bottom:1px solid #e5e7eb;}
+  .tricolor .r{background:var(--rojo);}
+  .wrap{max-width:520px;margin:0 auto;padding:56px 22px 60px;text-align:center;}
+  .sello{display:inline-block;font-size:12px;letter-spacing:3px;font-weight:800;color:var(--verde);border:2px solid var(--verde);border-radius:999px;padding:7px 18px;margin-bottom:26px;}
+  h1{font-size:34px;line-height:1.2;margin-bottom:14px;}
+  h1 .rojo{color:var(--rojo);}
+  .sub{font-size:19px;color:var(--txt);margin-bottom:8px;}
+  .precio{font-size:56px;font-weight:800;color:var(--verde);margin:18px 0 30px;letter-spacing:-1px;}
+  .precio small{font-size:20px;font-weight:700;vertical-align:super;}
+  .paybtn{display:block;text-align:center;background:var(--verde);color:#fff;font-size:21px;font-weight:800;text-decoration:none;border-radius:18px;padding:20px;margin:0 0 14px;box-shadow:0 8px 22px rgba(0,104,71,.35);}
   .paybtn:active{transform:scale(.98);}
-  .methods{text-align:center;color:var(--mut);font-size:13px;margin-bottom:6px;}
-  .wa{display:block;text-align:center;background:#fff;color:#128c4b;border:2px solid #128c4b;font-weight:700;text-decoration:none;border-radius:16px;padding:14px;margin-top:10px;font-size:16px;}
-  .note{background:#fff8e6;border:1px solid #f0d98c;border-radius:12px;padding:14px 16px;font-size:13.5px;color:#6b5a1e;margin-bottom:18px;}
-  footer{text-align:center;color:var(--mut);font-size:12px;padding:0 20px 30px;}
+  .wa{display:block;text-align:center;background:#fff;color:var(--verde);border:2px solid var(--verde);font-weight:700;text-decoration:none;border-radius:18px;padding:15px;margin-top:6px;font-size:16px;}
+  footer{margin-top:44px;color:var(--mut);font-size:12px;}
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <span class="eyebrow">ASESORÍA CONSULAR</span>
-  <h1>¿Necesitas cita en el consulado?</h1>
-  <p>Un asesor te explica paso a paso cómo conseguirla. Sin vueltas, sin filas perdidas.</p>
-  <div class="price">Solo $5</div>
-</div>
+<div class="tricolor"><div class="v"></div><div class="b"></div><div class="r"></div></div>
 
 <div class="wrap">
+  <span class="sello">CONSULADO MEXICANO</span>
+  <h1>¿No puedes conseguir <span class="rojo">cita consular</span>?</h1>
+  <p class="sub">Nosotros te ayudamos por</p>
+  <div class="precio"><small>$</small>5.99</div>
 
-  <div class="card">
-    <h2>Qué incluye tu asesoría de $5</h2>
-    <ul>
-      <li>Explicación paso a paso del proceso de la cita</li>
-      <li>Qué documentos necesitas llevar</li>
-      <li>Cómo funciona el sistema de citas del consulado</li>
-      <li>Respuestas a todas tus preguntas</li>
-    </ul>
-  </div>
+  <!-- PEGA AQUÍ EL PAYPAL PAYMENT LINK DE LA CUENTA DE TU ESPOSA -->
+  <a class="paybtn" id="payBtn" href="PEGA-AQUI-EL-LINK-DE-PAYPAL">Pagar $5.99 ahora</a>
+  <a class="wa" href="https://wa.me/13852302341?text=Hola%2C%20ya%20pagu%C3%A9%20mi%20asesor%C3%ADa%20de%20cita%20consular%20(%245.99).%20Mi%20nombre%20es%3A%20">Ya pagué — hablar con el asesor</a>
 
-  <div class="card">
-    <h2>Cómo funciona</h2>
-    <div class="step"><div class="n">1</div><p><b>Pagas tus $5 aquí abajo.</b> Aceptamos Venmo, Apple Pay, tarjeta o PayPal. Pago 100% seguro.</p></div>
-    <div class="step"><div class="n">2</div><p><b>Después del pago,</b> escríbenos por WhatsApp con tu comprobante.</p></div>
-    <div class="step"><div class="n">3</div><p><b>Un asesor te atiende</b> y te explica todo lo que necesitas.</p></div>
-  </div>
-
-  <div class="card">
-    <!-- PEGA AQUÍ EL PAYPAL PAYMENT LINK DE LA CUENTA DE TU ESPOSA -->
-    <a class="paybtn" id="payBtn" href="PEGA-AQUI-EL-LINK-DE-PAYPAL">Pagar $5 ahora</a>
-    <p class="methods">Pago seguro por PayPal · Venmo · Apple Pay · Tarjeta</p>
-    <a class="wa" href="https://wa.me/13852302341?text=Hola%2C%20ya%20pagu%C3%A9%20mi%20asesor%C3%ADa%20de%20cita%20consular%20(%245).%20Mi%20nombre%20es%3A%20">Ya pagué — hablar con el asesor</a>
-  </div>
-
-  <div class="note">Ten a la mano tu comprobante de pago de PayPal cuando escribas por WhatsApp. Solo atendemos a personas que ya realizaron su pago.</div>
-
+  <footer>Asesoría informativa.</footer>
 </div>
-
-<footer>Asesoría informativa sobre el proceso de citas consulares.</footer>
 
 </body>
 </html>
